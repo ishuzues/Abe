@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Archive OS</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="desktop">
+
+<!-- DESKTOP ICONS -->
+
+<div class="desktop-icon" ondblclick="openWindow('documents')">
+<div class="icon-img">📁</div>
+<div class="icon-label">Documents</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('photos')">
+<div class="icon-img">🖼️</div>
+<div class="icon-label">Photos</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('music')">
+<div class="icon-img">🎵</div>
+<div class="icon-label">Music</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('paint')">
+<div class="icon-img">🎨</div>
+<div class="icon-label">Paint</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('messages')">
+<div class="icon-img">💬</div>
+<div class="icon-label">Messages</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('browser')">
+<div class="icon-img">🌐</div>
+<div class="icon-label">Browser</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('archive')">
+<div class="icon-img">🗄️</div>
+<div class="icon-label">Archive</div>
+</div>
+
+<div class="desktop-icon" ondblclick="openWindow('bin')">
+<div class="icon-img">🗑️</div>
+<div class="icon-label">Recycle Bin</div>
+</div>
+
+</div>
+
+<!-- TASKBAR -->
+
+<div id="taskbar">
+
+<button id="startBtn">
+Start
+</button>
+
+<div id="taskApps"></div>
+
+<div id="clock"></div>
+
+</div>
+
+<!-- START MENU -->
+
+<div id="startMenu">
+
+<h3>Archive OS</h3>
+
+<div class="start-item" onclick="openWindow('documents')">
+Documents
+</div>
+
+<div class="start-item" onclick="openWindow('photos')">
+Photos
+</div>
+
+<div class="start-item" onclick="openWindow('music')">
+Music
+</div>
+
+<div class="start-item" onclick="openWindow('archive')">
+Archive
+</div>
+
+</div>
+
+<!-- DOCUMENTS -->
+
+<div class="window" id="documents">
+
+<div class="titlebar">
+
+<span>Documents</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('documents')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<div class="file">
+readme.txt
+</div>
+
+<div class="file">
+system_log.txt
+</div>
+
+<div class="file">
+important_note.txt
+</div>
+
+</div>
+
+</div>
+
+<!-- PHOTOS -->
+
+<div class="window" id="photos">
+
+<div class="titlebar">
+
+<span>Photos</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('photos')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<div class="photo-grid">
+
+<img src="assets/photo1.jpg">
+<img src="assets/photo2.jpg">
+<img src="assets/photo3.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MUSIC -->
+
+<div class="window" id="music">
+
+<div class="titlebar">
+
+<span>Music</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('music')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<h2>Playlist</h2>
+
+<p>Add your playlist link below.</p>
+
+<a href="#" target="_blank">
+Open Playlist
+</a>
+
+</div>
+
+</div>
+
+<!-- PAINT -->
+
+<div class="window" id="paint">
+
+<div class="titlebar">
+
+<span>Paint</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('paint')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<img
+class="paint-image"
+src="assets/drawing.png">
+
+</div>
+
+</div>
+
+<!-- MESSAGES -->
+
+<div class="window" id="messages">
+
+<div class="titlebar">
+
+<span>Messages</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('messages')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<div class="message">
+
+<h3>Draft 01</h3>
+
+<p>
+Things I never said.
+</p>
+
+</div>
+
+<div class="message">
+
+<h3>Draft 02</h3>
+
+<p>
+Read when bored.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- BROWSER -->
+
+<div class="window" id="browser">
+
+<div class="titlebar">
+
+<span>Browser</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('browser')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<input
+class="browser-bar"
+value="archive.local">
+
+<div class="browser-page">
+
+Welcome to Archive OS.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ARCHIVE -->
+
+<div class="window" id="archive">
+
+<div class="titlebar">
+
+<span>Archive</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('archive')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<h2>Restricted Entry</h2>
+
+<input
+type="password"
+id="archivePassword"
+placeholder="Password">
+
+<button onclick="unlockArchive()">
+Unlock
+</button>
+
+<div id="archiveResult"></div>
+
+</div>
+
+</div>
+
+<!-- RECYCLE BIN -->
+
+<div class="window" id="bin">
+
+<div class="titlebar">
+
+<span>Recycle Bin</span>
+
+<div class="window-buttons">
+<button>—</button>
+<button>□</button>
+<button onclick="closeWindow('bin')">✕</button>
+</div>
+
+</div>
+
+<div class="window-content">
+
+<p>
+Nothing here.
+
+I keep everything.
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
